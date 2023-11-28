@@ -12,7 +12,11 @@ describe('Verify Overview page', ()=>{
             testData = data;
             cy.visit('http://qa-engagement-app.com:3000/overview');
             
-         
+            //testing google
+            cy.origin('https://accounts.google.com', () => {
+
+
+            })
             cy.on('uncaught:exception', (err, runnable) => {
                 if (err.message.includes('Cannot read properties of undefined')) {
                   return false
