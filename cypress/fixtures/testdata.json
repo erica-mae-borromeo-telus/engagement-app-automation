@@ -1,0 +1,17 @@
+{
+    "userdata":
+    {
+    "1" : 
+    {
+        "name": "Erica",
+        "username": "erica.borromeo",
+        "pass": ""
+    }
+    },
+    "teamMember":
+    {
+        "links": ["Overview","Events","Tasks"]
+    }
+
+    
+}
