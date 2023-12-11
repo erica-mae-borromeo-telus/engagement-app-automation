@@ -62,6 +62,8 @@ Cypress.Commands.add('loginByGoogleApi', () => {
         window.localStorage.setItem('googleCypress', JSON.stringify(userItem))
         
         //cy.visit('http://qa-engagement-app.com:3000/overview')
+      }).then(()=>{
+        cy.visit('http://qa-engagement-app.com:3000/overview')
       })
     })
   })
