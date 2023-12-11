@@ -11,7 +11,7 @@ describe('Test Login', function () {
   })
 
     it('shows login', function () {
-      
+      cy.visit('http://qa-engagement-app.com:3000/overview')
         cy.log('successfully logged in')
     })
   })

@@ -55,8 +55,13 @@ Cypress.Commands.add('loginByGoogleApi', () => {
         }
   
         window.sessionStorage.setItem('userRole','Admin')
+        window.localStorage.setItem('email', JSON.stringify(userItem.user.email))
+        window.localStorage.setItem('familyName', JSON.stringify(userItem.user.familyName))
+        window.localStorage.setItem('givenName', JSON.stringify(userItem.user.givenName))
+        window.localStorage.setItem('sessDate', '12/11/2023')
         window.localStorage.setItem('googleCypress', JSON.stringify(userItem))
-        cy.visit('http://qa-engagement-app.com:3000/overview')
+        
+        //cy.visit('http://qa-engagement-app.com:3000/overview')
       })
     })
   })
