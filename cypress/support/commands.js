@@ -54,8 +54,9 @@ Cypress.Commands.add('loginByGoogleApi', () => {
           },
         }
   
+        window.sessionStorage.setItem('userRole','Admin')
         window.localStorage.setItem('googleCypress', JSON.stringify(userItem))
-        cy.visit('http://qa-engagement-app.com:3000/')
+        cy.visit('http://qa-engagement-app.com:3000/overview')
       })
     })
   })
