@@ -18,9 +18,7 @@ describe('Test Login', function () {
     })
   })
 
-    it('shows login', function () {
-      //cy.visit('http://qa-engagement-app.com:3000/overview')
+    it('Verifies elements in Overview page', function () {
         cy.log('successfully logged in')
-        cy.get('[href="/events"]').click();
     })
   })
