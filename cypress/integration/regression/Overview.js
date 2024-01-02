@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+// <reference types="Cypress" />
 
 import OverviewPage from '../pageObjects/OverviewPage';
 import LoginPage from '../pageObjects/LoginPage';
